@@ -34,11 +34,11 @@ jobs:
       - name: Install Dependencies
         run: pip install -r requirements.txt
         
-      - name: Exeute Notebook
+      - name: Exceute Notebook
         run: jupyter-nbconvert --execute homework1.ipynb --to html
         
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.0
         with:
           name: Artifact
-          path: plot_iris_exercise.html
+          path: homework1.html
